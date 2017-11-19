@@ -22,7 +22,7 @@ module.exports = {
   // 模块配置
   module:{
     // 配置loader规则
-    relus:[
+    rules:[
       //css文件
       { 
         test:/\.csss$/,
@@ -54,7 +54,7 @@ module.exports = {
       {
         test: /\.js$/,
         use: [ 'babel-loader' ],
-        exclude: path.resolve(__dirname, './node_modules')  // 注意绝对路径
+        exclude: path.resolve(__dirname, '../node_modules')  // 注意绝对路径
       },
       //打包vue文件
       {
